@@ -3,9 +3,5 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView android:id="@+id/add_fragment_container_tv"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="添加影"
-        android:textSize="50sp"/>
+    <include layout="@layout/dialog_add_cinema"/>
 </LinearLayout>
