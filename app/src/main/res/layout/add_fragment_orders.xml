@@ -7,7 +7,7 @@
     <TextView android:id="@+id/ad_fragment_orders_tv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="订单列表"
+        android:text="点击订单"
         android:textSize="50sp"/>
 
 </LinearLayout>

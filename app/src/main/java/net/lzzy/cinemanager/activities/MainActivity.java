@@ -16,6 +16,8 @@ import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 
 import net.lzzy.cinemanager.R;
+import net.lzzy.cinemanager.fragments.AddCinemasFragment;
+import net.lzzy.cinemanager.fragments.AddOrdersFragment;
 import net.lzzy.cinemanager.fragments.CinemasFragment;
 import net.lzzy.cinemanager.fragments.OrdersFragment;
 
@@ -55,6 +57,7 @@ private FragmentManager managar=getSupportFragmentManager();
         search = findViewById(main_sv_search);
         findViewById(bar_title_tv_view_cinema).setOnClickListener(this);
         findViewById(bar_title_tv_add_order).setOnClickListener(this);
+        findViewById(bar_title_tv_add_cinema).setOnClickListener(this);
         findViewById(bar_title_tv_view_order).setOnClickListener(this);
         findViewById(bar_title_tv_exit).setOnClickListener(this);
         findViewById(bar_title_tv_exit).setOnClickListener(v -> System.exit(0));
@@ -79,13 +82,17 @@ private FragmentManager managar=getSupportFragmentManager();
         private Fragment createFragment(int id) {
         switch (id){
                 case R.id.bar_title_tv_add_cinema:
-                    break;
+                    return new AddCinemasFragment();
+
                 case R.id.bar_title_tv_view_cinema:
                     return new CinemasFragment();
+
                 case R.id.bar_title_tv_add_order:
-                    break;
-                case bar_title_tv_view_order:
+                   return new AddOrdersFragment();
+
+                case R.id.bar_title_tv_view_order:
                     return new OrdersFragment();
+
                     default:
                         break;
             }
