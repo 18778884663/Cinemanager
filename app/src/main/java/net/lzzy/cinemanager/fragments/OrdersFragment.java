@@ -13,12 +13,16 @@ public class OrdersFragment extends BaseFragment {
 
     @Override
     protected void populate() {
-        TextView tv=find(R.id.fragment_cinemas_tv);
 
     }
 
     @Override
     public int getLayoutRes() {
         return R.layout.fragment_orders;
+    }
+
+    @Override
+    public void search(String kw) {
+
     }
 }
