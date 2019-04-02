@@ -25,6 +25,8 @@ public class Order extends BaseEntity implements Sqlitable {
     private float price;
     private UUID cinemaId;
 
+
+
     public String getMovie() {
         return movie;
     }
@@ -45,11 +47,13 @@ public class Order extends BaseEntity implements Sqlitable {
         return price;
     }
 
-    public void setPrice(float price) {
+    public void setPrice(float price)
+    {
         this.price = price;
     }
 
     public UUID getCinemaId() {
+
         return cinemaId;
     }
 
